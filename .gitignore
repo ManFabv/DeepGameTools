@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# Internal Directories
+.vs/
