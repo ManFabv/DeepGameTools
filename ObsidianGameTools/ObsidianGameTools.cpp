@@ -1,12 +1,37 @@
 ﻿// ObsidianGameTools.cpp : Defines the entry point for the application.
 //
 
-#include <iostream>
 #include <GLFW/glfw3.h>
 
-int main()
+int main(void)
 {
-	std::cout << "Hello CMake." << std::endl;
+    GLFWwindow* window;
 
-	return EXIT_SUCCESS;
+    // Initialize the library
+    if (!glfwInit())
+        return -1;
+
+    // Create a windowed mode window and its OpenGL context
+    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+    if (!window)
+    {
+        glfwTerminate();
+        return -1;
+    }
+
+    // Make the window's context current
+    glfwMakeContextCurrent(window);
+
+    // Loop until the user closes the window
+    while (!glfwWindowShouldClose(window))
+    {
+        // Swap front and back buffers
+        glfwSwapBuffers(window);
+
+        // Poll for and process events
+        glfwPollEvents();
+    }
+
+    glfwTerminate(); // it also cleans window pointer
+    return 0;
 }
