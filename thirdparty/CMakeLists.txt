@@ -1,5 +1,5 @@
-# CMakeList.txt : third party folder
+# CMakeList.txt : third party common folder
 #
 
 # Include sub-projects.
-include_directories ("glfw")
+include_directories ("glm")

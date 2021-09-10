@@ -32,4 +32,9 @@
 *.app
 
 # Internal Directories
-.vs/
+build/
+.vs/ObsidianGameTools/
+
+# OS Specific
+.DS_STORE
+.desktop
