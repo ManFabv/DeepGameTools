@@ -3,10 +3,10 @@
 #
 
 # Add include directories
-include_directories ( ${PROJECT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}/include )
+include_directories ( ${PROJECT_SOURCE_DIR}/ObsidianGameEditor/include )
 
 # Add source to this project's executable.
-add_executable ( ${CMAKE_PROJECT_NAME} "include/ObsidianGameEditorMainApp.h" "src/ObsidianGameEditorMainApp.cpp" #main entry point for editor
+add_executable ( ObsidianGameEditor "include/ObsidianGameEditorMainApp.h" "src/ObsidianGameEditorMainApp.cpp" #main entry point for editor
                                        "include/ObsidianGameEditorMainFrame.h" "src/ObsidianGameEditorMainFrame.cpp"
                                       )
 
@@ -15,5 +15,5 @@ add_subdirectory ( "thirdparty" )
 add_subdirectory ( "thirdparty/wxwidgets" )
 
 # Add tests and install targets if needed.
-target_link_libraries ( ${CMAKE_PROJECT_NAME} PRIVATE glm )
-target_link_libraries ( ${CMAKE_PROJECT_NAME} PRIVATE wx::core wx::base )
+target_link_libraries ( ObsidianGameEditor PRIVATE glm )
+target_link_libraries ( ObsidianGameEditor PRIVATE wx::core wx::base )

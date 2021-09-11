@@ -11,9 +11,10 @@ set ( CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_HOME_DIRECTORY}/../_ObsidianGameToo
 set ( CMAKE_CXX_STANDARD 17 )
 set ( CMAKE_CXX_STANDARD_REQUIRED ON )
 
-project ("ObsidianGameEditor")
+project ( "ObsidianGameTools" )
 
 # Include sub-projects.
 add_subdirectory ( "thirdparty" )
 add_subdirectory ( "thirdparty/glm" )
-add_subdirectory ( ${CMAKE_PROJECT_NAME} )
+add_subdirectory ( "ObsidianGameEngine" )
+add_subdirectory ( "ObsidianGameEditor" )
