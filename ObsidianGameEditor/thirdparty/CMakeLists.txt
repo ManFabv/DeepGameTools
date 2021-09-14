@@ -2,4 +2,4 @@
 #
 
 # Include sub-projects.
-include_directories ("wxwidgets")
+include_directories ( "wxwidgets" )

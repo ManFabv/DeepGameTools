@@ -2,3 +2,4 @@
 #
 
 # Include sub-projects.
+include_directories ( "vulkan" )
