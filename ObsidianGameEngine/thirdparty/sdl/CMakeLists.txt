@@ -15,7 +15,13 @@ if ( NOT sdl_POPULATED )
     FetchContent_Populate ( sdl )
 
     set ( SDL_TEST OFF CACHE INTERNAL "Run sdl tests" )
-    set ( SDL_SUBSYSTEMS Video Events Joystick Haptic )
+    
+    set ( SDL_SUBSYSTEMS Filesystem Video Events Joystick Haptic )
+
+    set ( SDL_AUDIO OFF CACHE INTERNAL "Add sdl audio" )
+    set ( SDL_LOCALE OFF CACHE INTERNAL "Add sdl locale" )
+    set ( SDL_TIMERS OFF CACHE INTERNAL "Add sdl timers" )
+    set ( VIDEO_OPENGLES OFF CACHE INTERNAL "Add sdl opengl" )
 
     add_subdirectory ( ${sdl_SOURCE_DIR} ${sdl_BINARY_DIR} )
 endif ()
