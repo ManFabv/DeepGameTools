@@ -1,11 +1,14 @@
 // Obsidian Game Engine main entry point
 
+#include "GameEngine.h"
 #include <SDL.h>
 #include "vulkan/vulkan.h"
 
 #include <stdio.h>
 
-int main( int argc, char* args[] )
+using namespace GameEngine::Main;
+
+int StartGame( int argc, char* args[] )
 {
     SDL_Window* window = nullptr;
     
