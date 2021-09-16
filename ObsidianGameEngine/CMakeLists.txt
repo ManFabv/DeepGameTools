@@ -12,8 +12,8 @@ include_directories ( ${PROJECT_SOURCE_DIR}/ObsidianGameEngine/include )
 
 # Add source to this project's executable.
 add_library ( ObsidianGameEngine 
-                 "include/GameEngine.h"
-                 "src/GameEngine.cpp" 
+                 "include/OGameEngine/OGameEngine.h"
+                 "src/OGameEngine.cpp" 
 )
 
 # Add tests and install targets if needed.

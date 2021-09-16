@@ -10,8 +10,8 @@ add_subdirectory ( "thirdparty/wxwidgets" )
 include_directories ( ${PROJECT_SOURCE_DIR}/ObsidianGameEditor/include )
 
 # Add source to this project's executable.
-add_executable ( ObsidianGameEditor "include/ObsidianGameEditorMainApp.h" "src/ObsidianGameEditorMainApp.cpp" #main entry point for editor
-                                       "include/ObsidianGameEditorMainFrame.h" "src/ObsidianGameEditorMainFrame.cpp"
+add_executable ( ObsidianGameEditor "include/OGameEditor/OGameEditorMainApp.h" "src/OGameEditorMainApp.cpp" #main entry point for editor
+                                    "include/OGameEditor/OGameEditorMainFrame.h" "src/OGameEditorMainFrame.cpp"
 )
 
 # Add tests and install targets if needed.

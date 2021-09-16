@@ -1,17 +1,17 @@
-#include "ObsidianGameEditorMainFrame.h"
+#include "OGameEditor/OGameEditorMainFrame.h"
 
 enum
 {
     ID_Hello = 1
 };
 
-wxBEGIN_EVENT_TABLE(ObsidianGameEngineEditorMainFrame, wxFrame)
-    EVT_MENU(ID_Hello,   ObsidianGameEngineEditorMainFrame::OnHello)
-    EVT_MENU(wxID_EXIT,  ObsidianGameEngineEditorMainFrame::OnExit)
-    EVT_MENU(wxID_ABOUT, ObsidianGameEngineEditorMainFrame::OnAbout)
+wxBEGIN_EVENT_TABLE(OGameEditor::Main::OGameEditorMainFrame, wxFrame)
+    EVT_MENU(ID_Hello,   OGameEditorMainFrame::OnHello)
+    EVT_MENU(wxID_EXIT,  OGameEditorMainFrame::OnExit)
+    EVT_MENU(wxID_ABOUT, OGameEditorMainFrame::OnAbout)
 wxEND_EVENT_TABLE()
 
-ObsidianGameEngineEditorMainFrame::ObsidianGameEngineEditorMainFrame(const wxString& title, const wxPoint& pos, const wxSize& size)
+OGameEditor::Main::OGameEditorMainFrame::OGameEditorMainFrame(const wxString& title, const wxPoint& pos, const wxSize& size)
         : wxFrame(NULL, wxID_ANY, title, pos, size)
 {
     wxMenu *menuFile = new wxMenu;
@@ -28,17 +28,17 @@ ObsidianGameEngineEditorMainFrame::ObsidianGameEngineEditorMainFrame(const wxStr
     SetStatusText( "Welcome to wxWidgets!" );
 }
 
-void ObsidianGameEngineEditorMainFrame::OnExit(wxCommandEvent& event)
+void OGameEditor::Main::OGameEditorMainFrame::OnExit(wxCommandEvent& event)
 {
     Close( true );
 }
 
-void ObsidianGameEngineEditorMainFrame::OnAbout(wxCommandEvent& event)
+void OGameEditor::Main::OGameEditorMainFrame::OnAbout(wxCommandEvent& event)
 {
     wxMessageBox( "This is a wxWidgets' Hello world sample", "About Hello World", wxOK | wxICON_INFORMATION );
 }
 
-void ObsidianGameEngineEditorMainFrame::OnHello(wxCommandEvent& event)
+void OGameEditor::Main::OGameEditorMainFrame::OnHello(wxCommandEvent& event)
 {
     wxLogMessage("Hello world from wxWidgets!");
 }

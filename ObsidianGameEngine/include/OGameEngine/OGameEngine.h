@@ -2,14 +2,14 @@
 
 #pragma once
 
-namespace GameEngine
+namespace OGameEngine
 {
     namespace Main
     {
-        class GameEngine
+        class OGameEngine
         {
         public:
-            int StartGame(int argc, char* args[]);
+            int StartGame( int argc, char* args[] );
         };
     }
 }
