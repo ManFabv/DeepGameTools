@@ -8,7 +8,9 @@
 		"files.exclude": {
 			".idea": false,
 			".vs": false,
-			".vscode": false
+			".vscode": false,
+			"*.ffs_db": true,
+			"*.ffs_gui": true
 		}
 	}
 }

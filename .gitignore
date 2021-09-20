@@ -38,3 +38,6 @@ build/
 # OS Specific
 .DS_STORE
 .desktop
+
+*.ffs_gui
+*.ffs_db
