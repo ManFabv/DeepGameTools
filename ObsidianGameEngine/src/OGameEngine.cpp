@@ -4,6 +4,8 @@
 #include <SDL.h>
 #include "vulkan/vulkan.h"
 
+#include "OWindow/OWindow.h"
+
 #include <stdio.h>
 
 int OGameEngine::Main::OGameEngine::StartGame ( int argc, char* args[] )
