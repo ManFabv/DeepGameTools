@@ -5,18 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Obsidian Game Editor Debug (lldb)",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/../_ObsidianGameToolsBuild/bin/ObsidianGameEditor",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "lldb"
-        },
-        {
             "name": "Obsidian Game Engine Platform MacOS Debug (lldb)",
             "type": "cppdbg",
             "request": "launch",
