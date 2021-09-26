@@ -10,5 +10,9 @@ int OGameEngine::Main::OGameEngine::StartGame ( int argc, char* args[] )
 {
     SubModules::OWindow::OWindow owindow;
 
+    int init_value = owindow.Init();
+
+    assert(init_value == 0);
+
     return 0;
 }

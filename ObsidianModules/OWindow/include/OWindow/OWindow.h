@@ -8,6 +8,7 @@ namespace SubModules
         {
         public:
             OWindow();
+            int Init();
         };
     }
 }
