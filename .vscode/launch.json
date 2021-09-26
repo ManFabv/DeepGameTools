@@ -15,6 +15,30 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb"
+        },
+        {
+            "name": "Obsidian Game Engine Platform Linux Debug (lldb)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/../_ObsidianGameToolsBuild/bin/ObsidianGameEngineLinux",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "Obsidian Game Engine Platform Windows Debug x64 (lldb)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/../_ObsidianGameToolsBuild/bin/ObsidianGameEngineWindows",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
         }
     ]
 }

@@ -2,4 +2,6 @@
 #
 
 # Include sub-projects.
+include_directories ("Linux")
 include_directories ("MacOS")
+include_directories ("Windows")

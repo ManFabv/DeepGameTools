@@ -3,9 +3,7 @@
 #
 
 # Include sub-projects.
-# add_subdirectory ( "thirdparty" )
-# add_subdirectory ( "thirdparty/vulkan" )
-# add_subdirectory ( "thirdparty/sdl" )
+add_subdirectory ( "Frameworks" )
 
 # Add include directories
 include_directories ( ${PROJECT_SOURCE_DIR}/platforms/MacOS/include )
