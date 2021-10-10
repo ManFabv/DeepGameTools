@@ -30,3 +30,14 @@
 *.exe
 *.out
 *.app
+
+# Internal Directories
+build/
+.vs/ObsidianGameTools/
+
+# OS Specific
+.DS_STORE
+.desktop
+
+*.ffs_gui
+*.ffs_db
