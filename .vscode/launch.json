@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Obsidian Game Engine Platform MacOS Debug (lldb)",
+            "name": "Deep Game Engine Platform MacOS Debug (lldb)",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/../_ObsidianGameToolsBuild/bin/ObsidianGameEngineMacOS",
+            "program": "${workspaceFolder}/../_DeepGameToolsBuild/bin/DeepGameEngineMacOS",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -17,10 +17,10 @@
             "MIMode": "lldb"
         },
         {
-            "name": "Obsidian Game Engine Platform Linux Debug (lldb)",
+            "name": "Deep Game Engine Platform Linux Debug (lldb)",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/../_ObsidianGameToolsBuild/bin/ObsidianGameEngineLinux",
+            "program": "${workspaceFolder}/../_DeepGameToolsBuild/bin/DeepGameEngineLinux",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -29,10 +29,10 @@
             "MIMode": "lldb"
         },
         {
-            "name": "Obsidian Game Engine Platform Windows Debug x64 (lldb)",
+            "name": "Deep Game Engine Platform Windows Debug x64 (lldb)",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/../_ObsidianGameToolsBuild/bin/ObsidianGameEngineWindows",
+            "program": "${workspaceFolder}/../_DeepGameToolsBuild/bin/DeepGameEngineWindows",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",

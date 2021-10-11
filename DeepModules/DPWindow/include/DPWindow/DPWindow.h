@@ -2,12 +2,12 @@
 
 namespace SubModules
 {
-    namespace OWindow
+    namespace DPWindow
     {
-        class OWindow
+        class DPWindow
         {
         public:
-            OWindow();
+            DPWindow();
             int Init();
         };
     }

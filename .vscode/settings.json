@@ -12,5 +12,5 @@
         "editor.suggest.insertMode": "replace",
         "editor.semanticHighlighting.enabled": true
     },
-    "cmake.buildDirectory": "${workspaceFolder}/../_ObsidianGameToolsBuild/"
+    "cmake.buildDirectory": "${workspaceFolder}/../_DeepGameToolsBuild/"
 }
