@@ -5,8 +5,8 @@
     {
       "type": "default",
       "project": "CMakeLists.txt",
-      "projectTarget": "ObsidianGameTools.exe",
-      "name": "ObsidianGameTools.exe"
+      "projectTarget": "DeepGameTools.exe",
+      "name": "DeepGameTools.exe"
     }
   ]
 }

@@ -1,2 +1,2 @@
-# ObsidianGameTools
- Obsidian Game Tools
+# DeepGameTools
+ Deep Game Tools

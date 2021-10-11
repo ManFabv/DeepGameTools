@@ -1,12 +1,12 @@
-// Obsidian Game Engine main entry point
+// Deep Game Engine main entry point
 
 #pragma once
 
-namespace OGameEngine
+namespace DPGameEngine
 {
     namespace Main
     {
-        class OGameEngine
+        class DPGameEngine
         {
         public:
             int StartGame( int argc, char* args[] );

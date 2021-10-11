@@ -2,4 +2,4 @@
 #
 
 # Include sub-projects.
-include_directories ( "OWindow" )
+include_directories ( "DPWindow" )

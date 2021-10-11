@@ -33,7 +33,7 @@
 
 # Internal Directories
 build/
-.vs/ObsidianGameTools/
+.vs/DeepGameTools/
 
 # OS Specific
 .DS_STORE
