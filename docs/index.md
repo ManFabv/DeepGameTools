@@ -5,4 +5,4 @@ Here I'm going to be posting different tutorials and things that I'm learning th
 **[GitHub Repository](https://github.com/ManFabv/DeepGameTools)**
 
 ## SonarQube
-* [Installing SonarQube in Ubuntu Server 20.04 - Part 1 - Prerequisites](https://manfabv.github.io/DeepGameTools/001-Install_Sonarqube_on_Ubuntu_20.04.md)
+* [Installing SonarQube in Ubuntu Server 20.04 - Part 1 - Prerequisites](./001-Install_Sonarqube_on_Ubuntu_20.04.md)
