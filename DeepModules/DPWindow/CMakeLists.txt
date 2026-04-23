@@ -2,14 +2,13 @@
 # project specific logic here.
 #
 
-# Include sub-projects.
-
 # Add include directories
 include_directories ( ${PROJECT_SOURCE_DIR}/DeepModules/DPWindow/include )
 
-# Add source to this project's executable.
+# Add library
 add_library ( DPWindow 
               "include/DPWindow/DPWindow.h" "src/DPWindow.cpp"
 )
 
-# Add tests and install targets if needed.
+# Link SDL3
+target_link_libraries ( DPWindow PRIVATE SDL3::SDL3 )

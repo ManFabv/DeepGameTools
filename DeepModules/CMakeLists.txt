@@ -2,4 +2,4 @@
 #
 
 # Include sub-projects.
-include_directories ( "DPWindow" )
+add_subdirectory ( "DPWindow" )

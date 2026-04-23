@@ -9,14 +9,16 @@ add_subdirectory ( "thirdparty/vulkan" )
 # Add include directories
 include_directories ( ${PROJECT_SOURCE_DIR}/DeepGameEngine/include )
 include_directories ( ${PROJECT_SOURCE_DIR}/DeepModules/DPWindow/include )
+include_directories ( ${PROJECT_SOURCE_DIR}/include )
 
 # Add source to this project's executable.
 add_library ( DeepGameEngine 
               "include/DPGameEngine/DPGameEngine.h"
               "src/DPGameEngine.cpp" 
+              "../src/Core/Game.cpp"
 )
 
 # Add tests and install targets if needed.
-target_link_libraries ( DeepGameEngine PRIVATE glm )
+target_link_libraries ( DeepGameEngine PRIVATE SDL3::SDL3 EnTT::EnTT )
 target_link_libraries ( DeepGameEngine PRIVATE Vulkan::Headers )
 target_link_libraries ( DeepGameEngine PRIVATE DPWindow )

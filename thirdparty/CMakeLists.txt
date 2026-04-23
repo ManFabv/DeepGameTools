@@ -2,4 +2,5 @@
 #
 
 # Include sub-projects.
-include_directories ("glm")
+add_subdirectory ( "SDL3" )
+add_subdirectory ( "EnTT" )
