@@ -42,3 +42,4 @@ build/
 *.ffs_gui
 *.ffs_db
 .vs/slnx.sqlite
+.idea
