@@ -1,45 +1,86 @@
-# Prerequisites
-*.d
+# === C++ / CMake Game Engine Multiplatform GitIgnore ===
 
-# Compiled Object files
+# --- Prerequisites & Dependency Management ---
+*.d
+_deps/
+.cache/
+
+# --- Build Output & Internal Directories ---
+build/
+[Bb]uild/
+out/
+bin/
+bin-int/
+
+# --- CMake Generated Files ---
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# --- Compiled Object Files ---
 *.slo
 *.lo
 *.o
 *.obj
 
-# Precompiled Headers
+# --- Precompiled Headers ---
 *.gch
 *.pch
 
-# Compiled Dynamic libraries
+# --- Compiled Dynamic & Static Libraries ---
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
 *.lib
+*.a
+*.la
+*.lai
+*.exp
 
-# Executables
+# --- Debug Info & Linker Files ---
+*.pdb
+*.ilk
+*.map
+
+# --- Executables ---
 *.exe
 *.out
 *.app
 
-# Internal Directories
-build/
-.vs/DeepGameTools/
+# --- Fortran module files ---
+*.mod
+*.smod
 
-# OS Specific
-.DS_STORE
+# --- IDEs & Editors ---
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.vcxproj
+*.filters
+*.sln
+.idea/
+cmake-build-*/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- OS Specific ---
+.DS_Store
 .desktop
+Thumbs.db
+desktop.ini
 
+# --- Third Party / Tools ---
 *.ffs_gui
 *.ffs_db
-.vs/slnx.sqlite
-.idea
+
+# --- Logs & Diagnostics ---
+*.log
+*.tmp
+*.tlog
