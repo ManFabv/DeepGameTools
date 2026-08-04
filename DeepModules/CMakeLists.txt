@@ -3,3 +3,5 @@
 
 # Include sub-projects.
 include_directories ( "DPWindow" )
+include_directories ( "ThirdParty/The-Forge" )
+
