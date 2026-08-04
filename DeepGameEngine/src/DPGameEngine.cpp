@@ -1,7 +1,6 @@
 // Deep Game Engine main entry point
 
 #include "DPGameEngine/DPGameEngine.h"
-#include "vulkan/vulkan.h"
 #include <cassert>
 
 #include "DPWindow/DPWindow.h"
