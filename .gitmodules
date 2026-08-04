@@ -1,0 +1,3 @@
+submodule "DeepModules/ThirdParty/The-Forge"]
+	path = DeepModules/ThirdParty/The-Forge
+	url = https://github.com/ConfettiFX/The-Forge.git
