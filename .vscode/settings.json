@@ -1,0 +1,21 @@
+{
+  "cmake.configureOnOpen": false,
+
+  "cmake.buildDirectory": "${workspaceFolder}/../_DeepGameToolsBuild/build/default",
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/.vscode/**": true
+  },
+
+  "search.exclude": {
+    "**/.vscode/**": true,
+    "**/_DeepGameToolsBuild/**": true
+  },
+
+  "files.watcherExclude": {
+    "**/_DeepGameToolsBuild/**": true,
+    "**/.vscode/**": true
+  }
+}

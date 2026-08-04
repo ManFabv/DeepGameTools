@@ -11,6 +11,8 @@ build/
 out/
 bin/
 bin-int/
+/_DeepGameToolsBuild/
+/../_DeepGameToolsBuild/
 
 # --- CMake Generated Files ---
 CMakeCache.txt
@@ -65,7 +67,8 @@ compile_commands.json
 *.sln
 .idea/
 cmake-build-*/
-.vscode/
+.vscode/*
+!.vscode/settings.json
 *.swp
 *.swo
 *~

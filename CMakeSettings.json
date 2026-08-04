@@ -1,15 +1,11 @@
 ﻿{
-  "configurations": [
+  "version": 3,
+  "configurePresets": [
     {
-      "name": "x64-Debug",
-      "generator": "Ninja",
-      "configurationType": "Debug",
-      "inheritEnvironments": [ "msvc_x64_x64" ],
-      "buildRoot": "${projectDir}\\\\..\\\\_DeepGameToolsBuild\\\\build\\\\${name}",
-      "installRoot": "${projectDir}\\out\\install\\${name}",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "name": "default",
+      "displayName": "Default Config",
+      "description": "Build Directory setup",
+      "binaryDir": "${sourceDir}/../_DeepGameToolsBuild/build/${presetName}"
     }
   ]
 }
