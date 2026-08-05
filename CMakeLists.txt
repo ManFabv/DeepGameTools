@@ -22,5 +22,4 @@ add_subdirectory ( "DeepPlatforms/MacOS" )
 add_subdirectory ( "DeepPlatforms/Windows" )
 add_subdirectory ( "DeepModules" )
 add_subdirectory ( "DeepModules/DPWindow" )
-add_subdirectory ( "DeepModules/ThirdParty/The-Forge" )
 
