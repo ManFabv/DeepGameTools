@@ -3,7 +3,8 @@
 #
 
 # Include sub-projects.
-add_subdirectory ( "thirdparty" )
+
+
 # Add include directories
 include_directories ( ${PROJECT_SOURCE_DIR}/DeepGameEngine/include )
 include_directories ( ${PROJECT_SOURCE_DIR}/DeepModules/DPWindow/include )
