@@ -6,7 +6,7 @@
 
 
 # Add include directories
-include_directories ( ${PROJECT_SOURCE_DIR}/platforms/Windows/include )
+include_directories ( ${PROJECT_SOURCE_DIR}/DeepPlatforms/Windows/include )
 include_directories ( ${PROJECT_SOURCE_DIR}/DeepGameEngine/include )
 
 # Add source to this project's executable.
