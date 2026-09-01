@@ -15,8 +15,8 @@ set ( CMAKE_CXX_EXTENSIONS OFF )
 project ( "DeepGameTools" )
 
 # Include sub-projects.
-add_subdirectory ( "thirdparty" )
-add_subdirectory ( "thirdparty/glm" )
+add_subdirectory ( "ThirdParty" )
+add_subdirectory ( "ThirdParty/glm" )
 add_subdirectory ( "DeepGameEngine" )
 add_subdirectory ( "DeepPlatforms" )
 add_subdirectory ( "DeepPlatforms/Linux" )

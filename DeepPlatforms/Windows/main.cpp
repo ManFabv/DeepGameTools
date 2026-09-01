@@ -1,4 +1,4 @@
-// Main entry point for DeepGameEngine for MacOS
+// Main entry point for DeepGameEngine for Windows
 
 #include "DPGameEngine/DPGameEngine.h"
 
