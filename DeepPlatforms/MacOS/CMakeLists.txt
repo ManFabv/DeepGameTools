@@ -3,11 +3,8 @@
 #
 
 # Include sub-projects.
-add_subdirectory ( "Frameworks" )
 
 # Add include directories
-include_directories ( ${PROJECT_SOURCE_DIR}/DeepPlatforms/MacOS/include )
-include_directories ( ${PROJECT_SOURCE_DIR}/DeepGameEngine/include )
 
 # Add source to this project's executable.
 add_executable ( DeepGameEngineMacOS "main.cpp" )

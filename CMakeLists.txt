@@ -3,24 +3,19 @@
 #
 cmake_minimum_required(VERSION 4.0)
 
-# Set properties
-set ( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_HOME_DIRECTORY}/../_DeepGameToolsBuild/bin )
-set ( CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_HOME_DIRECTORY}/../_DeepGameToolsBuild/lib )
-set ( CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_HOME_DIRECTORY}/../_DeepGameToolsBuild/archive )
+project ( "DeepGameTools" )
 
 set ( CMAKE_CXX_STANDARD 17 )
 set ( CMAKE_CXX_STANDARD_REQUIRED ON )
 set ( CMAKE_CXX_EXTENSIONS OFF )
 
-project ( "DeepGameTools" )
+# Set properties
+set ( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_HOME_DIRECTORY}/../_DeepGameToolsBuild/bin )
+set ( CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_HOME_DIRECTORY}/../_DeepGameToolsBuild/lib )
+set ( CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_HOME_DIRECTORY}/../_DeepGameToolsBuild/archive )
 
 # Include sub-projects.
-add_subdirectory ( "ThirdParty" )
-add_subdirectory ( "ThirdParty/glm" )
-add_subdirectory ( "DeepGameEngine" )
-add_subdirectory ( "DeepPlatforms" )
-add_subdirectory ( "DeepPlatforms/Linux" )
-add_subdirectory ( "DeepPlatforms/MacOS" )
-add_subdirectory ( "DeepPlatforms/Windows" )
-add_subdirectory ( "DeepModules" )
-add_subdirectory ( "DeepModules/DPWindow" )
+add_subdirectory(ThirdParty)
+add_subdirectory(DeepModules)
+add_subdirectory(DeepGameEngine)
+add_subdirectory(DeepPlatforms)

@@ -2,4 +2,3 @@
 #
 
 # Include sub-projects.
-include_directories ("glm")

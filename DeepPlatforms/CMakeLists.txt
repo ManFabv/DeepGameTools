@@ -2,6 +2,10 @@
 #
 
 # Include sub-projects.
-include_directories ("Linux")
-include_directories ("MacOS")
-include_directories ("Windows")
+if(APPLE)
+    add_subdirectory(MacOS)
+elseif(WIN32)
+    add_subdirectory(Windows)
+elseif(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    add_subdirectory(Linux)
+endif()

@@ -3,3 +3,6 @@
 
 # Include sub-projects.
 include_directories ( "DPWindow" )
+
+# Adde subprojects.
+add_subdirectory ( "DPWindow" )
