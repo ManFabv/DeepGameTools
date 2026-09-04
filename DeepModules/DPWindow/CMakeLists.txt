@@ -4,7 +4,6 @@
 
 # Include sub-projects.
 
-# Add include directories
 # Add source to this project's executable.
 add_library ( DPWindow
               "include/DPWindow/DPWindow.h"
@@ -18,3 +17,7 @@ target_include_directories(DPWindow
 )
 
 # Add tests and install targets if needed.
+target_link_libraries(DPWindow
+    PRIVATE
+        SDL3::SDL3
+)

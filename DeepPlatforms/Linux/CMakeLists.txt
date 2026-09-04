@@ -7,7 +7,7 @@
 # Add include directories
 
 # Add source to this project's executable.
-add_executable ( DeepGameEngineLinux "main.cpp" )
+add_executable ( DeepGameEngineLinux "../main.cpp" )
 
 # Add tests and install targets if needed.
-target_link_libraries ( DeepGameEngineLinux PRIVATE DeepGameEngine DPWindow )
+target_link_libraries ( DeepGameEngineLinux PRIVATE DeepGameEngine DPWindow SDL3::SDL3 )
