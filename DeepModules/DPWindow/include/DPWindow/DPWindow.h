@@ -1,24 +1,27 @@
 #pragma once
 
-#include <SDL3/SDL.h>
+struct SDL_Window;
 
-namespace SubModules
+namespace SubModules::DPWindow
 {
-    namespace DPWindow
+    class DPWindow
     {
-        class DPWindow
-        {
-        public:
-            DPWindow();
-            ~DPWindow();
+    public:
+        DPWindow() = default;
+        ~DPWindow();
 
-            int Init();
-            void Shutdown();
+        DPWindow(const DPWindow&) = delete;
+        DPWindow& operator=(const DPWindow&) = delete;
 
-            SDL_Window* GetNativeWindow() const { return m_window; }
+        DPWindow(DPWindow&& other) noexcept;
+        DPWindow& operator=(DPWindow&& other) noexcept;
 
-        private:
-            SDL_Window* m_window{nullptr};
-        };
-    }
+        bool Init();
+        void Shutdown();
+
+        [[nodiscard]] SDL_Window* GetNativeWindow() const { return m_window; }
+
+    private:
+        SDL_Window* m_window{nullptr};
+    };
 }

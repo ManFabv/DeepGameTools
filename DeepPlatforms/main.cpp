@@ -6,7 +6,6 @@
 
 #include "DPGameEngine/DPGameEngine.h"
 #include "DPWindow/DPWindow.h"
-#include <cassert>
 
 struct AppContext
 {
@@ -18,8 +17,11 @@ SDL_AppResult SDL_AppInit(void** appstate, int argc, char* argv[])
 {
     auto* ctx = new AppContext();
 
-    int init_value = ctx->dpwindow.Init();
-    assert(init_value == 0);
+    if (!ctx->dpwindow.Init())
+    {
+        delete ctx;
+        return SDL_APP_FAILURE;
+    }
 
     if (ctx->dpgame.Init(argc, argv) != 0)
     {

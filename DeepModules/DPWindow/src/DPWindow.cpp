@@ -1,39 +1,46 @@
 #include "DPWindow/DPWindow.h"
+#include <SDL3/SDL.h>
 
-SubModules::DPWindow::DPWindow::DPWindow()
+namespace SubModules::DPWindow
 {
-}
-
-SubModules::DPWindow::DPWindow::~DPWindow()
-{
-    Shutdown();
-}
-
-int SubModules::DPWindow::DPWindow::Init()
-{
-    if (!SDL_Init(SDL_INIT_VIDEO | SDL_INIT_EVENTS))
+    DPWindow::~DPWindow()
     {
-        SDL_Log("Error al inicializar SDL: %s", SDL_GetError());
-        return SDL_APP_FAILURE;
+        Shutdown();
     }
 
-    m_window = SDL_CreateWindow("DeepGameEngine", 1280, 720, SDL_WINDOW_RESIZABLE);
-    if (!m_window)
+    DPWindow::DPWindow(DPWindow&& other) noexcept
+        : m_window(other.m_window)
     {
-        SDL_Log("Error al crear la ventana: %s", SDL_GetError());
-        SDL_Quit();
-        return SDL_APP_FAILURE;
+        other.m_window = nullptr;
     }
 
-    return SDL_APP_CONTINUE;
-}
-
-void SubModules::DPWindow::DPWindow::Shutdown()
-{
-    if (m_window)
+    DPWindow& DPWindow::operator=(DPWindow&& other) noexcept
     {
-        SDL_DestroyWindow(m_window);
-        m_window = nullptr;
+        if (this != &other)
+        {
+            Shutdown();
+            m_window = other.m_window;
+            other.m_window = nullptr;
+        }
+        return *this;
     }
-    SDL_Quit();
+
+    bool DPWindow::Init()
+    {
+        m_window = SDL_CreateWindow("DeepGameEngine", 1280, 720, SDL_WINDOW_RESIZABLE);
+        if (!m_window)
+        {
+            return false;
+        }
+        return true;
+    }
+
+    void DPWindow::Shutdown()
+    {
+        if (m_window)
+        {
+            SDL_DestroyWindow(m_window);
+            m_window = nullptr;
+        }
+    }
 }
