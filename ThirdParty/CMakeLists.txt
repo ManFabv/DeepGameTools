@@ -2,3 +2,4 @@
 #
 
 # Include sub-projects.
+add_subdirectory ("SDL3")
