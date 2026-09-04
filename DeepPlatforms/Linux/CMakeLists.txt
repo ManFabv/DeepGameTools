@@ -10,4 +10,4 @@
 add_executable ( DeepGameEngineLinux "main.cpp" )
 
 # Add tests and install targets if needed.
-target_link_libraries ( DeepGameEngineLinux PRIVATE DeepGameEngine )
+target_link_libraries ( DeepGameEngineLinux PRIVATE DeepGameEngine DPWindow )

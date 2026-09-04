@@ -9,7 +9,7 @@ namespace DPGameEngine
         class DPGameEngine
         {
         public:
-            int StartGame( int argc, char* args[] );
+            int Init( int argc, char* args[] );
         };
     }
 }

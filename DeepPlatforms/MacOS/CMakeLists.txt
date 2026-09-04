@@ -10,4 +10,4 @@
 add_executable ( DeepGameEngineMacOS "main.cpp" )
 
 # Add tests and install targets if needed.
-target_link_libraries ( DeepGameEngineMacOS PRIVATE DeepGameEngine )
+target_link_libraries ( DeepGameEngineMacOS PRIVATE DeepGameEngine DPWindow )

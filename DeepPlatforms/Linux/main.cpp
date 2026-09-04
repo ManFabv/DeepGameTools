@@ -2,9 +2,16 @@
 
 #include "DPGameEngine/DPGameEngine.h"
 
+#include "DPGameEngine/DPGameEngine.h"
+#include "DPWindow/DPWindow.h"
+#include <cassert>
+
 int main( int argc, char* args[] )
 {
-    DPGameEngine::Main::DPGameEngine dpgame;
+    SubModules::DPWindow::DPWindow dpwindow;
+    int init_value = dpwindow.Init();
+    assert(init_value == 0);
 
-    return dpgame.StartGame(argc, args);
+    DPGameEngine::Main::DPGameEngine dpgame;
+    return dpgame.Init(argc, args);
 }
